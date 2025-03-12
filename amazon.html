@@ -1,0 +1,135 @@
+<!--  ********************************************************************************************************
+ *  Module      : Amazon UI Clone                                                                            *
+ *  Description : Amazon-like user interface with navigation, search,Product listings, and footer links      *
+ *  Usage       : Displays Shopping experience with product categoreies,deals, and user account features     *
+ *                                                                                                           *
+  **************************************************************************************************************
+ *                                                                                                           *
+ *                                        Maintainance Log                                                   *                    
+ *   Date      : 12.03.2025                                                                                  *
+ *   Developer :Thulasi vasanth                                                                              *
+**************************************************************************************************************-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Website</title>
+    <link rel="stylesheet" href="amazon.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header  id="Top">
+      <nav class="navbar">
+        <img src="Assets/amazon_logo.png" alt="Amazon Logo" />
+        <div id="userLocation">
+          <i class="fa fa-light fa-location-dot"></i>
+          <div id="location">
+            <p>Deliver</p>
+            <p>Chennai</p>
+          </div>
+        </div>
+         <div id="search">
+          <select id="ourProduct">
+            <option value="all">All</option>
+            <option value="laptop">Laptop</option>
+            <option value="mobiles">Mobiles</option>
+          </select>
+          <input type="text" placeholder="Search Amazon" id="searchInput" />
+          <div id="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <p>Sign In</p>
+        <p>Orders</p>
+        <i
+          class="fa fa-light fa-cart-shopping"
+          style="color: #fff"
+          id="cart"
+        ></i>
+      </nav>
+    </header>
+    <nav id="secondary-nav">
+        <div id="menu">
+            <i class="fa-solid fa-bars fa-lg" style="color:#fff"></i>
+            <p>All</p>
+            <p>Today's Deals</p>
+            <p>Customer Service</p>
+            <p>Registry</p>
+            <p>Gift Cards</p>
+            <p>Sell</p>
+            <p>Shop deals in Electronics</p>
+        </div>
+    </nav> 
+
+    <img src="Assets/banner.jpg" alt="amazon prime day" id="primeDay">
+
+    <div id="shoppingItem">
+        <div class="product">
+            <p>Shop Trendy T-Shirts</p>
+            <img src="Assets/tshirt.png" alt="T-Shirt">
+            <p>Show Now</p>
+        </div>
+        <div class="product">
+            <p>Shop Durable Bikes</p>
+            <img src="Assets/Bike.webp" alt="Cycle">
+            <p>Show Now</p>
+        </div>
+        <div class="product">
+            <p>Shop The Clothes</p>
+            <img src="Assets/clothes.png" alt="Clothes">
+            <p>Show Now</p>
+        </div>
+        <div class="product">
+            <p>Shop Protective Helmet</p>
+            <img src="Assets/helmet.png" alt="Helmet">
+            <p>Show Now</p>
+        </div>
+    </div>
+
+    <div id="movingForward">
+        <a href="#Top"> Back to top</a>
+    </div>
+
+    <footer>
+    <div class="footerLinks">
+        <p>Get to Know us</p>
+        <p>About Us</p>
+        <p>Careers</p>
+        <p>Press Release</p>
+        <p>Amazon Science</p>
+    </div>
+    <div class="footerLinks">
+        <p>Connect  with us</p>
+        <p>Facebook</p>
+        <p>Twitter</p>
+        <p>Instagram</p>
+    </div>
+    <div class="footerLinks">
+        <p>Make Money with us</p>
+        <p>sell on Amazon</p>
+        <p>Sell Under amazon accelerator</p>
+        <p>Protect and build Your  Brand</p>
+        <p>Amazon Global  Setting</p>
+        <p>Become  an Affillate</p>
+        <p>Fullfillment by Amazon</p>
+        <p>Advertise Your products</p>
+        <p>Amazon Pay on Merchants</p>
+    </div>
+    <div class="footerLinks">
+        <p>Let  Us Help You</p>
+        <p>Your  Account</p>
+        <p>Return  Center</p>
+        <p>100%  Purchase  Protection</p>
+        <p>Amazon App Download</p>
+        <p>Help</p>
+    </div>
+    </footer>
+  </body>
+</html>
