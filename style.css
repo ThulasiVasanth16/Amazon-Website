@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 
 html {
@@ -23,6 +24,7 @@ nav img {
   height: 50px;
   width: 115px;
 }
+
 
 #userLocation {
   display: flex;
@@ -98,13 +100,16 @@ nav img {
   gap: 20px;
   align-items: center;
   color: #fff;
+  list-style-type: none;
 }
 
-#menu p {
+#menu li a {
   font-size: 14px;
+  color: white;
+  text-decoration: none;
 }
 
-#menu p:last-of-type {
+#menu li:last-of-type {
   margin-left: auto;
 }
 
@@ -171,19 +176,28 @@ footer {
   padding: 15px 0px;
 }
 
-.footerLinks {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  color: #acaba4;
-  font-size: 14px;
+
+.footerLinks h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff;
 }
 
-.footerLinks p:first-of-type {
+.footerLinks {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #ffffff;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.footerLinks ul , .footerLinks ul a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #acaba4 !important;
+    padding: 5px 0px;
+ 
 }
 
 /* ------ Responsive -----------*/
@@ -238,7 +252,7 @@ footer {
     gap: 14px;
   }
 
-  #menu p:last-of-type {
+  #menu li:last-of-type {
     display: none;
   }
 
@@ -252,27 +266,29 @@ footer {
     gap: 0px;
   }
 
-
-  .product{
+  .product {
     margin: 20px 0px;
   }
 
-
-  .product p:first-child{
+  .product p:first-child {
     font-size: 16px;
   }
 
-  .product p:last-child{
+  .product p:last-child {
     font-size: 14px;
   }
 
-  footer{
+  footer {
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
 
-  .footerLinks{
+  .footerLinks {
     align-items: center;
+  }
+
+  #gift{
+    margin-left: 30px;
   }
 }
